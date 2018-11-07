@@ -1,0 +1,45 @@
+.container{
+    max-width: 800px;
+    margin: 15rem auto;
+    background-color: rgba($primary-dark, .0);
+    box-shadow: $shadow-dark;
+    text-align: center;
+}
+
+.header{
+    height: 20vh;
+}
+
+.content{
+    display: flex;
+}
+
+.sidebar{
+    background-color: $primary-dark;
+    flex: 1;
+}
+
+.board{
+    background-color: $color-white;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    width: 600px;
+    height: 600px;
+}
+.tile{
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid $primary;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+
+    &:hover{
+        background-color: $light-2;
+        cursor: pointer;
+    }
+}
